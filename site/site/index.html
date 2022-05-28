@@ -1,0 +1,256 @@
+<DOCTYPE HTML!>
+<html>
+  <head>
+      <title>UB2 trvel</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+     
+  </head>
+
+   <body  background="images/back.jpg.jpg">
+
+
+
+
+<!-- logo-->
+
+
+   	<div class="container">
+<div class="logo">
+  <img src="images/logo.jpg" alt="" width="100"/>
+  </div>
+</div>
+
+
+
+
+
+<!-- lnav-->
+<div class="topnav">
+   <a class="active" href="index.html">Acceuil</a>
+   <a href="#Top">Top Destination</a>
+    <a href="#them">THems</a>
+   <a href="#vol">Vols</a>
+    <a href="#">Hotels</a>
+     <a href="#contact1">Contect</a>
+ 
+ 
+</div>
+
+<!--chmps -->
+<div class="search-box">
+      <input type="text" name="" class="search-txt" placeholder="Tapez pour rechercher" />
+      <a class="search-btn" href="#">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </a>
+    </div>
+
+
+<!--start header -->
+    <div class="header">
+        <div class="overlay">
+            <ul class="slider">
+                <li>
+                    <h1>UB2<span> TRAVEL</span></h1>
+                   
+                </li>
+
+               
+            </ul>
+        </div>
+    </div>
+
+
+
+
+<!-- image diapo -->
+
+<div align="center">
+  <div class="contener_slideshow">
+    <div class="contener_slide">
+      <div class="slid_1"><img src="images/ban2.jpg.jpg"  style="width: 550px " ></div>
+      <div class="slid_2"><img src="images/ban3.jpg"></div>
+      
+      <div class="slid_3"><img src="images/ban4.jpg"></div>
+       
+
+    </div>
+  </div>
+</div>
+
+
+
+<!--start  galery  -->
+<h2 id="Top"> TOP DESTINATION </h2>
+
+    <div class="container1">
+        <div class="box">
+            <img src="images/sahara.jpg.jpg">
+           <span>Sahara</span>
+        </div>
+        <div class="box">
+            <img src="images/mon.jpg.jpg">
+          <span>Montagnes</span>
+        </div>
+        
+        <div class="box">
+            <img src="images/plage.jpg.jpg">
+            <span>Plages</span>
+            
+        </div>
+        
+    </div>
+    
+
+
+    <!--  THEMS -->
+    <h2 id="them"> THEMES </h2>
+
+    <div id="them" class="our-team">
+        <div class="container">
+            <div class="box">
+                
+                
+            </div>
+
+            <div class="box">
+                <div class="overlay">
+                   <p> club enfant</p>
+                   
+                </div>
+                <img src="images/club-enfant.jpg" height="175px" width="175px" alt=" Suite  ">
+            </div>
+
+            <div class="box">
+                <div class="overlay">
+                    <p> parc aquatiques</p>
+                   
+                </div>
+                <img src="images/parc aquatique2.jpg" height="175px" width="175px" alt="Chambre Double ">
+            </div>
+
+            <div class="box">
+                <div class="overlay">
+                    <p> comping</p>
+                
+                </div>
+                <img src="images/Batna-Camping-Store.jpg" height="175px" width="175px" alt="Suite Junior ">
+            </div>
+
+            
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!--end les chambres -->
+
+
+		<!-- Formulaire pour trouver un vol -->
+		<h2 id="vol"> VOLS </h2>
+
+	<table width=400 height=200>
+		<br>
+        <caption><B> TROUVER UN VOL </B></caption>
+		<br>
+		<form method="post" action="traitement.php">
+ 
+			<tr><td>
+			<label>Départ</label> : <br><input type="text" name="depart" />
+			</td>
+			<td>
+			<label>Arrivée</label> : <br><input type="text" name="arrive" />
+			</tr></td>
+ 
+			<tr><td>
+			<!-- Tableau qui contiendra le calendrier ! -->
+			<table class="ds_box" cellpadding="0" cellspacing="0" id="ds_conclass" style="display: none;">
+			<tr>
+				<td id="ds_calclass"></td>
+			</tr>
+			</table>	 
+ 
+			<tr><td>
+			<label>Date de départ :<br></label><input type="text" name="date" onclick="ds_sh(this);" />
+			</td>				
+			<td><label">Date de retour :<br></label><input type="text" name="date" onclick="ds_sh(this);" />
+			</tr></td>
+ 
+			<tr>	
+				<td><label for="classe">Classe :</label><br>
+				<label for="adultes">Adulte(s) :</label><br></td>
+				<td><label for="enfants">Enfant(s) :</label><br>
+				<label for="bebe">Bébé(s) :</label><br></td>
+			</tr>
+			<tr>
+				<td><select name="classe" id="classe">
+				   <option value="economique">Economique</option>
+				   <option value="affaire">Affaire</option>
+				   <option value="premiere">Première</option>
+				</select>
+ 
+				<select name="adultes" id="adultes">
+				   <option value="1">1</option>
+				   <option value="2">2</option>
+				   <option value="3">3</option>
+				   <option value="4">4</option>
+				   <option value="5">5</option>
+				   <option value="6">6</option>
+				   <option value="7">7</option>
+				   <option value="8">8</option>
+				   <option value="9">9</option>
+				</select></td>
+ 
+				<td><select name="enfants" id="enfants">
+				   <option value="1">1</option>
+				   <option value="2">2</option>
+				   <option value="3">3</option>
+				   <option value="4">4</option>
+				   <option value="5">5</option>
+				   <option value="6">6</option>
+				   <option value="7">7</option>
+				   <option value="8">8</option>
+				</select>
+ 
+				<select name="bebe" id="bebe">
+				   <option value="1">1</option>
+				   <option value="2">2</option>
+				   <option value="3">3</option>
+				   <option value="4">4</option>
+				</select></td>
+ 
+ 
+			</tr>
+ 
+			<tr><td>
+				<input type="submit" value="Rechercher un vol" />
+			</tr></td>
+		</table>
+    
+
+
+
+<!-- image diapo -->
+<div align="center">
+  <div class="contener_slideshow">
+    <div class="contener_slide">
+      <div class="slid_1"><img src="images/AZ-Hotels-Grand-Oran.jpg"  style="width: 550px " ></div>
+      <div class="slid_2"><img src="images/Hôtel-Sabri-Annaba2.jpeg"></div>
+      
+      <div class="slid_3"><img src="images/m-zab-ghardaia.jpg"></div>
+       
+
+    </div>
+  </div>
+</div>
+
+ 
+<!--contact  -->
+  <section id="contact1">
+  
+          <h1><b>CONTACT</b></h1>
+
+        <p>Adresse:Université batna2-53;Route de Constantine.fésdis:batna 0578:Algérie</p>
+         <p>Téléphone :033 23 02 34</p>
+         <p>E-mail :contact@univ-batna2dz</p>
+        <img src="images/fisdis.jpg.jpeg" style="position:right">
+
+
+</section>

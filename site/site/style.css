@@ -1,0 +1,454 @@
+/* logo */
+
+.logo{
+     float: right;
+       background-color: transparent;
+       border-style: none;       
+    }
+
+
+
+
+/* navbar */
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  color: #873600;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:white;
+  color:white;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav  {
+
+  right:20%;
+  color: white;
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:#BA4A00;
+  color: white;
+}
+
+
+/* photo diapo */
+.contener_slideshow
+{
+  width:610px;
+  height:411px;
+  overflow: hidden;
+  position: relative;
+  /*background-image: url(http:YOUR-URL-IMAGE.png);*/
+}
+.slid_1, .slid_2, .slid_3
+{
+  position: absolute;
+  width:310px;
+  height:100px;
+}
+.slid_1{left: 0;}
+.slid_2{left: 700px;}
+.slid_3{left: 1420px;}
+.contener_slide
+{
+  width: 1220px;
+  height: 211px;
+  left:0px;
+  position: absolute;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-name: anim_slide;
+  -moz-animation-duration: 10s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-name: anim_slide;
+  -ms-animation-duration: 10s;
+  -ms-animation-iteration-count:infinite;
+  -ms-animation-name: anim_slide;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+  animation-name: anim_slide;
+}
+@-webkit-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+@-moz-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+@-ms-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+@keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+
+
+/*---- start header---- */
+.header {
+    /*background-image: url(../photos/background1\.jpg);*/
+    background-size: cover;
+    position: relative;
+}
+.header .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: seashell;
+    z-index: 1;
+}
+.header .bx-viewport {
+    height: 100% !important;
+    text-align: center;
+}
+.header .bx-wrapper {
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100% ;
+
+}
+.header .slider{
+    height: 100%;
+}
+.header .slider li{
+    display: block;
+    position: center;
+}
+.header .slider li h1{
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 50px ;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.header .slider li h1 span{
+    color: #A04000 ;
+}
+.header .slider p {
+    font-family: 'EB Garamond', serif;
+    font-size: 25px ;
+}
+
+/*CHMPS*/
+       .search-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #AF601A;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+      }
+      .search-box:hover > .search-txt {
+        width: 240px;
+        padding: 0 6px;
+      }
+      .search-box:hover > .search-btn {
+        background: white;
+        color: #F6DDCC;
+      }
+      .search-btn {
+        color: #F6DDCC;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #F6DDCC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .search-btn > i {
+        font-size: 20px;
+      }
+      .search-txt {
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        color: white;
+        font-size: 16px;
+        transition: 0.4s;
+        line-height: 40px;
+        width: 0px;
+        font-weight: bold;
+      }
+
+
+
+
+/* photo diapo */
+.contener_slideshow
+{
+  width:610px;
+  height:411px;
+  overflow: hidden;
+  position: relative;
+        
+}
+.slid_1, .slid_2, .slid_3
+{
+  position: absolute;
+  width:310px;
+  height:100px;
+}
+.slid_1{left: 0;}
+.slid_2{left: 700px;}
+.slid_3{left: 1420px;}
+.contener_slide
+{
+  width: 1220px;
+  height: 211px;
+  left:0px;
+  position: absolute;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-name: anim_slide;
+  -moz-animation-duration: 10s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-name: anim_slide;
+  -ms-animation-duration: 10s;
+  -ms-animation-iteration-count:infinite;
+  -ms-animation-name: anim_slide;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+  animation-name: anim_slide;
+}
+@-webkit-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+@-moz-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+@-ms-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+@keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+
+
+
+/*galery*/
+
+.container1 {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+  color: #AF601A;
+}
+
+
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+  /*---- THMES ---- *
+
+
+.our-team {
+    padding: 40px 20px ;
+}
+.our-team .box {
+    float: left;
+}
+.our-team .box:first-child {
+    width: 35%;
+}
+.our-team .box p {
+    color : #888;
+    line-height: 1.4;
+    font-size: 14px;
+}
+.our-team .box:not(:first-child){
+    font-weight: 15.25%;
+    margin-left: 1%;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+.our-team .box:not(:first-child) .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 183px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    background-color:rgba(1, 0, 0, 0.6);
+    display: none;
+    
+
+}
+.our-team .box:not(:first-child):hover .overlay{
+    display: block;
+}
+.our-team .box .overlay p {
+    padding-top: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    color: #EEE;
+    text-align: center;
+}
+.our-team .box .overlay a {
+    text-decoration: none;
+    color: springgreen;
+    font-size: 15px;
+
+}
+/*.our-team .box:not(:first-child) img {
+    width: 100%;
+}*/
+.our-team h2 {
+     font-weight: normal;
+     padding: 0 0 15px;
+}
+/*---- end Les chambres ---- */
+
+
+
+
+/*cnct*/
+#contact1{
+  background-color: #784212 ;
+ height: 300px;
+ position: static;
+  transform: translate(0%,-90%);
+
+
+
+}
+#contact1 img {
+  width: 300px;
+  height: 200px;
+  float: right;
+  margin-bottom:100px;
+  padding: 20px;
+  padding-top: 0%;
+  transform: translate(0%,-90%);
+}
